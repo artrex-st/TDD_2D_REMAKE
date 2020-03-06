@@ -214,12 +214,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 829883434}
-  - component: {fileID: 829883433}
+  - component: {fileID: 829883428}
+  - component: {fileID: 829883429}
   - component: {fileID: 829883432}
   - component: {fileID: 829883431}
   - component: {fileID: 829883430}
-  - component: {fileID: 829883429}
-  - component: {fileID: 829883428}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -317,25 +316,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 829883427}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &829883433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 829883427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4216bee588ef03441a0b7d1d4479d762, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bodiPlayer: {fileID: 0}
-  positionRight: {x: 0, y: 0, z: 0}
-  positionLeft: {x: 0, y: 0, z: 0}
-  speed: 50
-  maxSpeed: 75
-  speedJump: 0
-  maxSpeedJump: 0
 --- !u!4 &829883434
 Transform:
   m_ObjectHideFlags: 0
