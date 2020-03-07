@@ -10,12 +10,12 @@ public class Move : MonoBehaviour
     //private RigidBody selfRigidbody;
 
     public float JumpForce = 5.0f;
+    public bool IsGround;
     public Rigidbody rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        
     }
 
     //  ##  ##  ##  ##  ##  ##  ## //
@@ -35,26 +35,21 @@ public class Move : MonoBehaviour
 
     void Jump()
     {
-        if (CanJump())
+        if (IsGround)
         {
             // Jump on ridigbody
             rb.AddForce(0, JumpForce,0, ForceMode.Impulse); //(jumpStrength * transform.up, ForceMode.Impulse);
         }
     }
-    bool CanJump()
+
+
+    // COLIDERS \\
+    private void OnCollisionEnter(Collision collision)
     {
-        // Create Ray
-        Ray ray = new Ray(transform.position, transform.up * -1);
-
-        // Create Hit Info
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit, transform.localScale.y + 0.1f))
-        {
-            return true;
-        }
-
-        // Nothing so return false
-        return false;
+        IsGround = true; 
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        IsGround = false;
     }
 }
