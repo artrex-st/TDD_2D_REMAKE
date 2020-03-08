@@ -6,11 +6,10 @@ public class MoveControler : MonoBehaviour
 {
     CharacterController characterController;
 
-    public float speed = 6.0f;
-    public float jumpSpeed = 8.0f;
-    public float gravity = 20.0f;
-
+    public float speed = 6.0f, jumpSpeed = 8.0f, gravity = 20.0f;
+    public bool DoubleJump = false, Game2D = true;
     private Vector3 moveDirection = Vector3.zero;
+
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -20,27 +19,37 @@ public class MoveControler : MonoBehaviour
     {
         if (characterController.isGrounded)
         {
-            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-            moveDirection *= speed;
+            //moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+            //moveDirection *= speed;
+            moveDirection = MoveAxisPlayer();
             if (Input.GetButton("Jump"))//jump base
             {
                 moveDirection.y = jumpSpeed;
             }
+            DoubleJump = true;
         }
-        else if((characterController.collisionFlags & CollisionFlags.Sides) != 0) 
+        else if ((characterController.collisionFlags & CollisionFlags.Sides) != 0 & DoubleJump & Input.GetButton("Jump"))
         {
-            if (Input.GetButton("Jump"))//Jump de parede
-            {
-                moveDirection.y = jumpSpeed;
-                moveDirection.x *= -speed / 4;
-            }
+            moveDirection = MoveAxisPlayer();
+            characterController.Move(moveDirection * Time.deltaTime);
+            moveDirection.y = jumpSpeed;
+            DoubleJump = false;
         }
-
         moveDirection.y -= gravity * Time.deltaTime;
         characterController.Move(moveDirection * Time.deltaTime);
-        if ((characterController.collisionFlags & CollisionFlags.Sides) != 0)
-        {
-            print("Touching sides!");
-        }
+
+    }
+    private Vector3 MoveAxisPlayer()
+    {
+        var AxisPlayer = new Vector3();
+        if (Game2D)
+            AxisPlayer = new Vector3(Input.GetAxis("Horizontal"), 0.0f, 0) * speed;
+        else
+            AxisPlayer = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+        return AxisPlayer;
+    }
+    void Jump()
+    {
+        moveDirection.y = jumpSpeed;
     }
 }
