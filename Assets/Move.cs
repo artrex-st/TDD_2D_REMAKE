@@ -11,6 +11,8 @@ public class Move : MonoBehaviour
 
     public float JumpForce = 5.0f;
     public bool IsGround;
+    public LayerMask GroundLayer;
+    public RaycastHit hit;
     public Rigidbody rb;
 
     void Start()
@@ -27,12 +29,22 @@ public class Move : MonoBehaviour
         transform.Translate(translation, 0, 0);
         if (Input.GetKeyDown("space"))
             Jump();
-        // Rotate around our y-axis (usar apenas para 3D)
-        //float rotation = Input.GetAxis("Vertical") * rotationSpeed;
-        //rotation *= Time.deltaTime;
-        // transform.Rotate(0, rotation, 0);
-    }
+        //IsGround = Physics.BoxCast(Col.bounds.center, Col.bounds.size, 0f,Quaternion.)
 
+
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, 0.5f, GroundLayer))
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.green);
+            Debug.Log("Did Hit");
+            IsGround = true;
+        }
+        else
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 0.6f, Color.red);
+            Debug.Log("Did not Hit");
+            IsGround = false;
+        }
+    }
     void Jump()
     {
         if (IsGround)
@@ -42,14 +54,42 @@ public class Move : MonoBehaviour
         }
     }
 
-
+    private void OnTriggerEnter(Collider other)
+    {
+    }
     // COLIDERS \\
     private void OnCollisionEnter(Collision collision)
     {
-        IsGround = true; 
+        
+        print("Entrou");
+        foreach (ContactPoint contact in collision.contacts)
+        {
+            print(contact.thisCollider.name + " hit " + contact.otherCollider.tag);
+        }
+
+    }
+    private void OnCollisionStay(Collision collision)
+    {
+        
+        //PlayerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
     }
     private void OnCollisionExit(Collision collision)
     {
-        IsGround = false;
+        print("Saiu");
     }
 }
+
+
+
+////
+/*
+ * // Visualize the contact point
+ *      foreach (ContactPoint contact in collision.contacts)
+        {
+            print(contact.thisCollider.name + " hit " + contact.otherCollider.tag);
+        }
+ * 
+ * Debug.DrawRay(contact.point, contact.normal, Color.white);
+ * 
+ * 
+ */
