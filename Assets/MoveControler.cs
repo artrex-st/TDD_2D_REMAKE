@@ -22,12 +22,25 @@ public class MoveControler : MonoBehaviour
         {
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
             moveDirection *= speed;
-            if (Input.GetButton("Jump"))
+            if (Input.GetButton("Jump"))//jump base
             {
                 moveDirection.y = jumpSpeed;
             }
         }
+        else if((characterController.collisionFlags & CollisionFlags.Sides) != 0) 
+        {
+            if (Input.GetButton("Jump"))//Jump de parede
+            {
+                moveDirection.y = jumpSpeed;
+                moveDirection.x *= -speed / 4;
+            }
+        }
+
         moveDirection.y -= gravity * Time.deltaTime;
         characterController.Move(moveDirection * Time.deltaTime);
+        if ((characterController.collisionFlags & CollisionFlags.Sides) != 0)
+        {
+            print("Touching sides!");
+        }
     }
 }
