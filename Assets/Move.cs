@@ -26,22 +26,24 @@ public class Move : MonoBehaviour
 
         float translation = Input.GetAxis("Horizontal") * speed;
         translation *= Time.deltaTime;
+        Vector2 inputDirection = new Vector2(Input.GetAxis("Horizontal") * speed * 10 * Time.deltaTime, 0);
+        //Rigidbody= new Vector2(inputDirection.x, bodiPlayer.velocity.y); //
         transform.Translate(translation, 0, 0);
+        
+        //IsGround = Physics.BoxCast(Col.bounds.center, Col.bounds.size, 0f,Quaternion.)
+    }
+    private void FixedUpdate()
+    {
         if (Input.GetKeyDown("space"))
             Jump();
-        //IsGround = Physics.BoxCast(Col.bounds.center, Col.bounds.size, 0f,Quaternion.)
-
-
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, 0.5f, GroundLayer))
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.green);
-            Debug.Log("Did Hit");
             IsGround = true;
         }
         else
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 0.6f, Color.red);
-            Debug.Log("Did not Hit");
             IsGround = false;
         }
     }
@@ -53,30 +55,7 @@ public class Move : MonoBehaviour
             rb.AddForce(0, JumpForce,0, ForceMode.Impulse); //(jumpStrength * transform.up, ForceMode.Impulse);
         }
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-    }
     // COLIDERS \\
-    private void OnCollisionEnter(Collision collision)
-    {
-        
-        print("Entrou");
-        foreach (ContactPoint contact in collision.contacts)
-        {
-            print(contact.thisCollider.name + " hit " + contact.otherCollider.tag);
-        }
-
-    }
-    private void OnCollisionStay(Collision collision)
-    {
-        
-        //PlayerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
-    }
-    private void OnCollisionExit(Collision collision)
-    {
-        print("Saiu");
-    }
 }
 
 
