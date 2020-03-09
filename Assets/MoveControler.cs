@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,8 +7,8 @@ public class MoveControler : MonoBehaviour
     CharacterController characterController;
 
     public float speed = 6.0f, jumpSpeed = 8.0f, gravity = 20.0f;
-    public bool DoubleJump = false, Game2D = true;
-    private Vector3 moveDirection = Vector3.zero;
+    private bool DoubleJump = false, Game2D = true;
+    public Vector3 moveDirection = Vector3.zero;
 
     void Start()
     {
@@ -30,6 +30,7 @@ public class MoveControler : MonoBehaviour
         }
         else if ((characterController.collisionFlags & CollisionFlags.Sides) != 0 & DoubleJump & Input.GetButton("Jump"))
         {
+            moveDirection = Vector3.zero;
             moveDirection = MoveAxisPlayer();
             characterController.Move(moveDirection * Time.deltaTime);
             moveDirection.y = jumpSpeed;

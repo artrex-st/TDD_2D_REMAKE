@@ -25,14 +25,11 @@ public class Move : MonoBehaviour
     //  ##  ##  ##  ##  ##  ##  ## //
     void Update()
     {
-
         float translation = Input.GetAxis("Horizontal") * speed;
         translation *= Time.deltaTime;
-        Vector2 inputDirection = new Vector2(Input.GetAxis("Horizontal") * speed * 10 * Time.deltaTime, 0);
-        //Rigidbody= new Vector2(inputDirection.x, bodiPlayer.velocity.y); //
         transform.Translate(translation, 0, 0);
+        //rb.(translation, 0, 0);
         
-        //IsGround = Physics.BoxCast(Col.bounds.center, Col.bounds.size, 0f,Quaternion.)
     }
     private void FixedUpdate()
     {
