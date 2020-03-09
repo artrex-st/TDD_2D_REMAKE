@@ -14,10 +14,12 @@ public class Move : MonoBehaviour
     public LayerMask GroundLayer;
     public RaycastHit hit;
     public Rigidbody rb;
+    public BoxCollider BcPlayer;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        BcPlayer = GetComponent<BoxCollider>();
     }
 
     //  ##  ##  ##  ##  ##  ##  ## //
@@ -36,14 +38,14 @@ public class Move : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
             Jump();
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, 0.5f, GroundLayer))
+        if (Physics.BoxCast(transform.position, transform.lossyScale, transform.position*5f, out hit,transform.rotation,5f,GroundLayer))   
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.green);
+            //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.green);
             IsGround = true;
         }
         else
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 0.6f, Color.red);
+            //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 0.6f, Color.red);
             IsGround = false;
         }
     }
@@ -56,6 +58,10 @@ public class Move : MonoBehaviour
         }
     }
     // COLIDERS \\
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireCube(transform.position,transform.position*5f); 
+    }
 }
 
 
