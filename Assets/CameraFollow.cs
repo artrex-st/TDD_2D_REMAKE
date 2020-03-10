@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class CameraFollow : MonoBehaviour
 {
-	public Transform PlayerTransform; // Player Transform
+	public Rigidbody2D PlayerTransform; // Player Transform
 	public Transform CameraTransform; // Camera Transform
 	//public GameObject PlayerObject; // Capturar obj Do player
 
@@ -12,7 +12,7 @@ public class Camera : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
-		PlayerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
+		PlayerTransform = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
 		CameraTransform = GetComponent<Transform>();
 
 	}

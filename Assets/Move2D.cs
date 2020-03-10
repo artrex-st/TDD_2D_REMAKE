@@ -2,47 +2,47 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Move : MonoBehaviour
+public class Move2D : MonoBehaviour
 {
 
     public float speed = 10.0f;
-    public float rotationSpeed = 100.0f;
-    //private RigidBody selfRigidbody;
-
     public float JumpForce = 5.0f;
     public bool IsGround;
     public LayerMask GroundLayer;
     public RaycastHit hit;
-    public Rigidbody rb;
-    public BoxCollider BcPlayer;
+    public Rigidbody2D rb;
+    public CapsuleCollider2D BcPlayer;
+    public Animator PlayerAnimator;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        BcPlayer = GetComponent<BoxCollider>();
+        rb = GetComponent<Rigidbody2D>();
+        BcPlayer = GetComponent<CapsuleCollider2D>();
+        PlayerAnimator = GetComponent<Animator>();
     }
 
     //  ##  ##  ##  ##  ##  ##  ## //
     void Update()
     {
         float translation = Input.GetAxis("Horizontal") * speed;
-        translation *= Time.deltaTime;
-        transform.Translate(translation, 0, 0);
-        //rb.(translation, 0, 0);
-        
+        //transform.Translate(translation, 0);
+        rb.velocity = new Vector2(translation,rb.velocity.y);
+
+        if (Input.GetKeyDown("space"))
+            Jump();
     }
     private void FixedUpdate()
     {
-        if (Input.GetKeyDown("space"))
-            Jump();
-        if (Physics.BoxCast(transform.position, transform.lossyScale, transform.position*5f, out hit,transform.rotation,5f,GroundLayer))   
+        
+        if (Physics2D.BoxCast(BcPlayer.bounds.center,BcPlayer.bounds.size,0f,Vector2.down,0.1f,GroundLayer))   
         {
-            //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.green);
+            Debug.DrawRay(transform.position,Vector3.down * 0.1f, Color.green);
             IsGround = true;
+            print("Grounded");
         }
         else
         {
-            //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 0.6f, Color.red);
+            Debug.DrawRay(transform.position,Vector3.down * 0.2f, Color.red);
             IsGround = false;
         }
     }
@@ -51,13 +51,13 @@ public class Move : MonoBehaviour
         if (IsGround)
         {
             // Jump on ridigbody
-            rb.AddForce(0, JumpForce,0, ForceMode.Impulse); //(jumpStrength * transform.up, ForceMode.Impulse);
+            rb.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse); //(jumpStrength * transform.up, ForceMode.Impulse);
         }
     }
     // COLIDERS \\
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireCube(transform.position,transform.position*5f); 
+
     }
 }
 

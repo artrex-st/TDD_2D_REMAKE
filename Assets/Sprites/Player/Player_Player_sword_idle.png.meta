@@ -1,0 +1,1075 @@
+fileFormatVersion: 2
+guid: a4d96d68ff2a44644b94864e900f69e3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2008959102072319566
+    second: Player_Player_sword_idle_0
+  - first:
+      213: -8363273234697858125
+    second: Player_Player_sword_idle_1
+  - first:
+      213: -3639205997396276077
+    second: Player_Player_sword_idle_2
+  - first:
+      213: 6863502875445509156
+    second: Player_Player_sword_idle_3
+  - first:
+      213: 4674366481728710957
+    second: Player_Player_sword_idle_4
+  - first:
+      213: -9202621509872010739
+    second: Player_Player_sword_idle_5
+  - first:
+      213: -3753782434856621036
+    second: Player_Player_sword_idle_6
+  - first:
+      213: 5103504311208943901
+    second: Player_Player_sword_idle_7
+  - first:
+      213: 858025245911098611
+    second: Player_Player_sword_idle_8
+  - first:
+      213: -1171548948198937363
+    second: Player_Player_sword_idle_9
+  - first:
+      213: -4636418775251561090
+    second: Player_Player_sword_idle_10
+  - first:
+      213: -923837899544855025
+    second: Player_Player_sword_idle_11
+  - first:
+      213: 7559209766054233847
+    second: Player_Player_sword_idle_12
+  - first:
+      213: 581592840476256480
+    second: Player_Player_sword_idle_13
+  - first:
+      213: 4964640537771654482
+    second: Player_Player_sword_idle_14
+  - first:
+      213: -8741964474842090660
+    second: Player_Player_sword_idle_15
+  - first:
+      213: -5709125180153634635
+    second: Player_Player_sword_idle_16
+  - first:
+      213: 1083850704003879662
+    second: Player_Player_sword_idle_17
+  - first:
+      213: 3638582250724435853
+    second: Player_Player_sword_idle_18
+  - first:
+      213: 5864524779147496551
+    second: Player_Player_sword_idle_19
+  - first:
+      213: 8545104169203902966
+    second: Player_Player_sword_idle_20
+  - first:
+      213: -1356967711759684228
+    second: Player_Player_sword_idle_21
+  - first:
+      213: -3758643962077576890
+    second: Player_Player_sword_idle_22
+  - first:
+      213: -1745818578973400348
+    second: Player_Player_sword_idle_23
+  - first:
+      213: -316116398859373513
+    second: Player_Player_sword_idle_24
+  - first:
+      213: -7328183880892420518
+    second: Player_Player_sword_idle_25
+  - first:
+      213: 5233475362530677870
+    second: Player_Player_sword_idle_26
+  - first:
+      213: 5796375264597774213
+    second: Player_Player_sword_idle_27
+  - first:
+      213: 9106131143035402537
+    second: Player_Player_sword_idle_28
+  - first:
+      213: -2754629435976480328
+    second: Player_Player_sword_idle_29
+  - first:
+      213: -301791262024991356
+    second: Player_Player_sword_idle_30
+  - first:
+      213: 7874973902890719517
+    second: Player_Player_sword_idle_31
+  - first:
+      213: -5651754244163199784
+    second: Player_Player_sword_idle_32
+  - first:
+      213: 8144685237064216266
+    second: Player_Player_sword_idle_33
+  - first:
+      213: -4087829260383317997
+    second: Player_Player_sword_idle_34
+  - first:
+      213: -8974799210089725621
+    second: Player_Player_sword_idle_35
+  - first:
+      213: 8821249553058938143
+    second: Player_Player_sword_idle_36
+  - first:
+      213: -4769995953335869832
+    second: Player_Player_sword_idle_37
+  - first:
+      213: 8434645583555456641
+    second: Player_Player_sword_idle_38
+  - first:
+      213: -3470033850082066180
+    second: Player_Player_sword_idle_39
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10023
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b111b0375ebe14e0800000000000000
+      internalID: -2008959102072319566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9766
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b35d46bd4fafeb80800000000000000
+      internalID: -8363273234697858125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9509
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c49bc3d61fe7dc0800000000000000
+      internalID: -3639205997396276077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9252
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c3dc5308f004f50800000000000000
+      internalID: 6863502875445509156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8995
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29ae6d9c8faed040800000000000000
+      internalID: 4674366481728710957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8738
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ab5bd8e78b94080800000000000000
+      internalID: -9202621509872010739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8481
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c254e83c2e7ebc0800000000000000
+      internalID: -3753782434856621036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8224
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11a84ba12a43d640800000000000000
+      internalID: 5103504311208943901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7967
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f429d64a6158eb00800000000000000
+      internalID: 858025245911098611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7710
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decae915072ddbfe0800000000000000
+      internalID: -1171548948198937363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7453
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75dd2f40b128afb0800000000000000
+      internalID: -4636418775251561090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7196
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ef597335edd23f0800000000000000
+      internalID: -923837899544855025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6939
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f683585b35b7e860800000000000000
+      internalID: 7559209766054233847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6682
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e86f746b9b321800800000000000000
+      internalID: 581592840476256480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6425
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d326be342f5e440800000000000000
+      internalID: 4964640537771654482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6168
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53f3f580ad4ea680800000000000000
+      internalID: -8741964474842090660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5911
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b064ba95ec15c0b0800000000000000
+      internalID: -5709125180153634635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5654
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee255b9097c9a0f00800000000000000
+      internalID: 1083850704003879662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5397
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87a87c6747de7230800000000000000
+      internalID: 3638582250724435853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5140
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c009d073af26150800000000000000
+      internalID: 5864524779147496551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4883
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9ab1ec7fe469670800000000000000
+      internalID: 8545104169203902966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4626
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7da3e04e051b2de0800000000000000
+      internalID: -1356967711759684228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4369
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641033b0b3d96dbc0800000000000000
+      internalID: -3758643962077576890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4112
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2630e804b95c7e0800000000000000
+      internalID: -1745818578973400348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3855
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734bf426fcdec9bf0800000000000000
+      internalID: -316116398859373513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3598
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ee9a2369f0d4a90800000000000000
+      internalID: -7328183880892420518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3341
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6456643d1a01a840800000000000000
+      internalID: 5233475362530677870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3084
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f0637b79cd07050800000000000000
+      internalID: 5796375264597774213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2827
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9293fba370a7f5e70800000000000000
+      internalID: 9106131143035402537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2570
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b989c46f1795c9d0800000000000000
+      internalID: -2754629435976480328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2313
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48dfea63272dfcbf0800000000000000
+      internalID: -301791262024991356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2056
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19d5419a07894d60800000000000000
+      internalID: 7874973902890719517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1799
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc98de857fe091b0800000000000000
+      internalID: -5651754244163199784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1542
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acea49a121cb70170800000000000000
+      internalID: 8144685237064216266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1285
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310976822fc1547c0800000000000000
+      internalID: -4087829260383317997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1028
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4145204bab137380800000000000000
+      internalID: -8974799210089725621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 771
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1db6254bbf5b6a70800000000000000
+      internalID: 8821249553058938143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 514
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e5d55f3f19dcdb0800000000000000
+      internalID: -4769995953335869832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 257
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ee3263871ed0570800000000000000
+      internalID: 8434645583555456641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Player_sword_idle_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 136
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0074f2996f7dfc0800000000000000
+      internalID: -3470033850082066180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
