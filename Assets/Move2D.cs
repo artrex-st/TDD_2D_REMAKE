@@ -7,18 +7,21 @@ public class Move2D : MonoBehaviour
 
     public float speed = 10.0f;
     public float JumpForce = 5.0f;
-    public bool IsGround;
     public LayerMask GroundLayer;
-    public RaycastHit hit;
-    public Rigidbody2D rb;
-    public CapsuleCollider2D BcPlayer;
-    public Animator PlayerAnimator;
+    private bool IsGround,IsMoved,CanMove;
+    private Rigidbody2D rb;
+    private CapsuleCollider2D BcPlayer;
+    private Animator PlayerAnimator;
+    private SpriteRenderer PlayerSprite;
+    public Vector2 movimento;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         BcPlayer = GetComponent<CapsuleCollider2D>();
         PlayerAnimator = GetComponent<Animator>();
+        PlayerSprite = GetComponent<SpriteRenderer>();
+        GroundLayer = LayerMask.GetMask("Ground");
     }
 
     //  ##  ##  ##  ##  ##  ##  ## //
@@ -26,7 +29,25 @@ public class Move2D : MonoBehaviour
     {
         float translation = Input.GetAxis("Horizontal") * speed;
         //transform.Translate(translation, 0);
+        
         rb.velocity = new Vector2(translation,rb.velocity.y);
+        movimento = rb.velocity;
+        if (translation != 0)
+        {
+            IsMoved = true;
+        }
+        else
+        {
+            IsMoved = false;
+        }
+
+        if (translation < 0)
+            PlayerSprite.flipX=true;
+        else
+            PlayerSprite.flipX = false;
+
+
+        PlayerAnimator.SetBool("IsMoved", IsMoved);
 
         if (Input.GetKeyDown("space"))
             Jump();
@@ -38,12 +59,14 @@ public class Move2D : MonoBehaviour
         {
             Debug.DrawRay(transform.position,Vector3.down * 0.1f, Color.green);
             IsGround = true;
-            print("Grounded");
+            rb.gravityScale = 1;
+
         }
         else
         {
             Debug.DrawRay(transform.position,Vector3.down * 0.2f, Color.red);
             IsGround = false;
+            rb.gravityScale+=0.1f;
         }
     }
     void Jump()
@@ -55,6 +78,13 @@ public class Move2D : MonoBehaviour
         }
     }
     // COLIDERS \\
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Wall"))
+        {
+
+        }
+    }
     private void OnDrawGizmos()
     {
 

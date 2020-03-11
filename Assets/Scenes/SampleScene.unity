@@ -148,7 +148,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 199929632}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 18a1c3e06bedf6545a2c14229367d5a6, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -256,7 +256,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 216202636}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 18a1c3e06bedf6545a2c14229367d5a6, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -364,7 +364,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 228571492}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 18a1c3e06bedf6545a2c14229367d5a6, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -454,11 +454,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 392016464}
+  - component: {fileID: 392016467}
+  - component: {fileID: 392016465}
+  - component: {fileID: 392016466}
   - component: {fileID: 392016463}
   - component: {fileID: 392016462}
-  - component: {fileID: 392016467}
-  - component: {fileID: 392016466}
-  - component: {fileID: 392016465}
   m_Layer: 0
   m_Name: Player_Player_sword_idle_0
   m_TagString: Player
@@ -476,7 +476,7 @@ Animator:
   m_GameObject: {fileID: 392016461}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 77c3f4bd5b3ca8a409e80ca2169164f5, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6f1d8365f37a6c74e814efa905fdd170, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -544,7 +544,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 392016461}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.52, y: -3.91, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -565,7 +565,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -600,14 +600,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  JumpForce: 5
-  IsGround: 0
+  JumpForce: 10
   GroundLayer:
     serializedVersion: 2
-    m_Bits: 256
-  rb: {fileID: 0}
-  BcPlayer: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
+    m_Bits: 0
+  movimento: {x: 0, y: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,7 +823,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1742946780}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 18a1c3e06bedf6545a2c14229367d5a6, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -934,7 +931,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1931369785}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 18a1c3e06bedf6545a2c14229367d5a6, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
