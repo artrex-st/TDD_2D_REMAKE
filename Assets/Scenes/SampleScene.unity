@@ -348,7 +348,7 @@ GameObject:
   - component: {fileID: 228571495}
   - component: {fileID: 228571494}
   - component: {fileID: 228571493}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: 3
   m_TagString: Terra
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -460,7 +460,7 @@ GameObject:
   - component: {fileID: 392016463}
   - component: {fileID: 392016462}
   m_Layer: 0
-  m_Name: Player_Player_sword_idle_0
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -544,9 +544,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 392016461}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.449, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1043288630}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -603,7 +604,7 @@ MonoBehaviour:
   JumpForce: 10
   GroundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   movimento: {x: 0, y: 0}
 --- !u!1 &519420028
 GameObject:
@@ -702,6 +703,36 @@ Transform:
   m_Children:
   - {fileID: 1524739468}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1043288629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1043288630}
+  m_Layer: 0
+  m_Name: footColider
+  m_TagString: Untagged
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1043288630
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043288629}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 392016464}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1524739467
@@ -915,7 +946,7 @@ GameObject:
   - component: {fileID: 1931369788}
   - component: {fileID: 1931369787}
   - component: {fileID: 1931369786}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: 2
   m_TagString: Terra
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}

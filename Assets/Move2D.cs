@@ -5,10 +5,9 @@ using UnityEngine;
 public class Move2D : MonoBehaviour
 {
 
-    public float speed = 10.0f;
-    public float JumpForce = 5.0f;
+    public float speed = 10.0f,JumpForce = 5.0f;
     public LayerMask GroundLayer;
-    private bool IsGround,IsMoved,CanMove;
+    private bool IsGround,IsMoved;
     private Rigidbody2D rb;
     private CapsuleCollider2D BcPlayer;
     private Animator PlayerAnimator;
@@ -31,16 +30,7 @@ public class Move2D : MonoBehaviour
         //transform.Translate(translation, 0);
         
         rb.velocity = new Vector2(translation,rb.velocity.y);
-        movimento = rb.velocity;
-        if (translation != 0)
-        {
-            IsMoved = true;
-        }
-        else
-        {
-            IsMoved = false;
-        }
-
+        PlayerAnimator.SetFloat("Moved", Mathf.Abs(translation));
         if (translation < 0)
             PlayerSprite.flipX=true;
         else
@@ -68,6 +58,10 @@ public class Move2D : MonoBehaviour
             IsGround = false;
             rb.gravityScale+=0.1f;
         }
+    }
+    private bool fIsground()
+    {
+        return Physics2D.BoxCast(BcPlayer.bounds.center, BcPlayer.bounds.size, 0f, Vector2.down, 0.1f, GroundLayer);
     }
     void Jump()
     {
